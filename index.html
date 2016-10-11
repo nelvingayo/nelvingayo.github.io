@@ -1,1075 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
+
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-<br>
-<br>
-<br>
-<div class="row">
-<div class="col-sm-12">
-<ul>
-  <li><a href="#gridbasic">Grid Basic</a></li>
-  <li><a href="#typography">Typography</a></li>
-  <li><a href="#basictable">Basic Table</a></li>
-  <li><a href="#images">Images</a></li>
-  <li><a href="#jumbotron">Jumbotron</a></li>
-  <li><a href="#well">Well</a></li>
-  <li><a href="#alerts">Alerts</a></li>
-  <li><a href="#button">Button</a></li>
-  <li><a href="#buttongroup">Button Group</a></li>
-  <li><a href="#glyphicons">Glyphicons</a></li>
-  <li><a href="#badges">Badges/Labels</a></li>
-  <li><a href="#progressbars">Progress Bars</a></li>
-  <li><a href="#pagination">Pagination</a></li>
-  <li><a href="#pager">Pager</a></li>
-  <li><a href="#listgroups">List Groups</a></li>
-  <li><a href="#panels">Panels</a></li>
-  <li><a href="#dropdowns">Dropdowns</a></li>
-  <li><a href="#collapse">Collapse</a></li>
-  <li><a href="#tabs">Tabs/Pills</a></li>
-  <li><a href="#navbar">Navbar</a></li>
-  <li><a href="#forms">Forms</a></li>
-  <li><a href="#inputs">Inputs</a></li>
-  <li><a href="#input2">Inputs 2</a></li>
-  <li><a href="#inputsizing">Input Sizing</a></li>
-  <li><a href="#mediaobjects">Media Objects</a></li>
-  <li><a href="#carousel">Carousel</a></li>
-  <li><a href="#modal">Modal</a></li>
-  <li><a href="#tooltip">Tooltip</a></li>
-  <li><a href="#popover">Popover</a></li>
-  <li><a href="#scroll">Scrollspy</a></li>
-  <li><a href="#affix">Affix</a></li>
 
-</ul>
-  </div>
-</div>
+<body id="page-top" class="index">
 
-<div class="container-fluid">
-  <h1>Hello World!</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <h1 id="gridbasic">Grid Basic</h1>
-  <div class="row">
-    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
-    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-  </div>
-</div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+            </div>
 
-<div class="container-fluid">
-  <h1>Hello World!</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <div class="row">
-    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-    <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
-  </div>
-</div>
-
-<div class="container">
-<h1 id="typography">Typography</h1>
-  <h1>h1 Bootstrap heading (36px)</h1>
-  <h2>h2 Bootstrap heading (30px)</h2>
-  <h3>h3 Bootstrap heading (24px)</h3>
-  <h4>h4 Bootstrap heading (18px)</h4>
-  <h5>h5 Bootstrap heading (14px)</h5>
-  <h6>h6 Bootstrap heading (12px)</h6>
-</div>
-
-<div class="container">
-  <h2>Basic Table</h2>
-  <h1 id="basictable">Basic Table</h1>
-  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="container">
-  <h2>Rounded Corners</h2>
-  <h1 id="images">Images</h1>
-  <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>
-  <img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-</div>
-
-<div class="container">
-  <h2>Circle</h2>
-  <p>The .img-circle class shapes the image to a circle (not available in IE8):</p>
-  <img src="cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
-</div>
-
-
-
-<div class="container">
-  <div class="jumbotron">
-    <h1>Bootstrap Tutorial</h1>
-    <h1 id="jumbotron">Jumbotron</h1>
-    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-  </div>
-  <p>This is some text.</p>
-  <p>This is another text.</p>
-</div>
-
-<div class="container">
-  <p>This is some text.</p>
-  <p>This is another text.</p>
-</div>
-
-<div class="container">
-  <div class="page-header">
-    <h1>Example Page Header</h1>
-  </div>
-  <p>This is some text.</p>
-  <p>This is another text.</p>
-</div>
-
-<div class="container">
-  <h2>Well</h2>
-  <h1 id="well">Well</h1>
-  <div class="well">Basic Well</div>
-</div>
-
-<div class="container">
-  <h2>Well Size</h2>
-  <div class="well well-sm">Small Well</div>
-  <div class="well">Normal Well</div>
-  <div class="well well-lg">Large Well</div>
-</div>
-
-<div class="container">
-<h1 id="alerts">Alerts</h1>
-  <h2>Alerts</h2>
-  <div class="alert alert-success">
-    <strong>Success!</strong> This alert box could indicate a successful or positive action.
-  </div>
-  <div class="alert alert-info">
-    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-  </div>
-  <div class="alert alert-warning">
-    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-  </div>
-  <div class="alert alert-danger">
-    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-  </div>
-</div>
-
-
-<div class="container">
-  <h2>Button Styles</h2>
-  <h1 id="button">Button</h1>
-  <button type="button" class="btn btn-default">Default</button>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-link">Link</button>
-</div>
-
-<div class="container">
-  <h2>Button Tags</h2>
-  <a href="#" class="btn btn-info" role="button">Link Button</a>
-  <button type="button" class="btn btn-info">Button</button>
-  <input type="button" class="btn btn-info" value="Input Button">
-  <input type="submit" class="btn btn-info" value="Submit Button">
-</div>
-
-<div class="container">
-  <h2>Button Group</h2>
-  <h1 id="buttongroup">Button Group</h1>
-  <div class="btn-group">
-    <button type="button" class="btn btn-primary">Apple</button>
-    <button type="button" class="btn btn-primary">Samsung</button>
-    <button type="button" class="btn btn-primary">Sony</button>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Button Groups - Set Sizes</h2>
-  <p>Add class .btn-group-* to size all buttons in a button group.</p>
-  <h3>Large Buttons:</h3>
-  <div class="btn-group btn-group-lg">
-    <button type="button" class="btn btn-primary">Apple</button>
-    <button type="button" class="btn btn-primary">Samsung</button>
-    <button type="button" class="btn btn-primary">Sony</button>
-  </div>
-  <h3>Extra Small Buttons:</h3>
-  <div class="btn-group btn-group-xs">
-    <button type="button" class="btn btn-primary">Apple</button>
-    <button type="button" class="btn btn-primary">Samsung</button>
-    <button type="button" class="btn btn-primary">Sony</button>
-  </div>
-</div>
-
-
-<div class="container">
-  <h2>Glyphicon Examples</h2>
-  <h1 id="glyphicons">Glyphicon</h1>
-  <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
-  <p>Envelope icon as a link:
-    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
-  </p>
-  <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
-  <p>Search icon on a button:
-    <button type="button" class="btn btn-default">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </button>
-  </p>
-  <p>Search icon on a styled button:
-    <button type="button" class="btn btn-info">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </button>
-  </p>
-  <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>
-  <p>Print icon on a styled link button:
-    <a href="#" class="btn btn-success btn-lg">
-      <span class="glyphicon glyphicon-print"></span> Print
-    </a>
-  </p>
-</div>
-
-<div class="container">
-  <h2>Badges</h2>
-  <h1 id="badges">Badges</h1>
-  <a href="#">News <span class="badge">5</span></a><br>
-  <a href="#">Comments <span class="badge">10</span></a><br>
-  <a href="#">Updates <span class="badge">2</span></a>
-</div>
-
-<div class="container">
-  <h2>Badges on Buttons</h2>
-  <button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button>
-  <button type="button" class="btn btn-success">Success <span class="badge">3</span></button>
-  <button type="button" class="btn btn-danger">Danger <span class="badge">5</span></button>
-</div>
-
-<div class="container">
-  <h2>Labels</h2>
-  <h1>Example <span class="label label-default">New</span></h1>
-  <h2>Example <span class="label label-default">New</span></h2>
-  <h3>Example <span class="label label-default">New</span></h3>
-  <h4>Example <span class="label label-default">New</span></h4>
-  <h5>Example <span class="label label-default">New</span></h5>
-  <h6>Example <span class="label label-default">New</span></h6>
-</div>
-
-<div class="container">
-  <h2>Basic Progress Bar</h2>
-  <h1 id="progressbars">Progress Bars</h1>
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-      <span class="sr-only">70% Complete</span>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Progress Bar With Label</h2>
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-      70%
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Colored Progress Bars</h2>
-  <p>The contextual classes colors the progress bars:</p>
-  <div class="progress">
-    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-      40% Complete (success)
-    </div>
-  </div>
-  <div class="progress">
-    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-      50% Complete (info)
-    </div>
-  </div>
-  <div class="progress">
-    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-      60% Complete (warning)
-    </div>
-  </div>
-  <div class="progress">
-    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-      70% Complete (danger)
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <h2>Pagination</h2>
-  <h1 id="pagination">Pagination</h1>
-  <p>The .pagination class provides pagination links:</p>
-  <ul class="pagination">
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h2>Pagination - Active State</h2>
-  <p>Add class .active to let the user know which page he/she is on:</p>
-  <ul class="pagination">
-    <li><a href="#">1</a></li>
-    <li class="active"><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h2>Pager</h2>
-  <h1 id="pager">Pager</h1>
-  <p>The .pager class provides previous and next buttons (links):</p>
-  <ul class="pager">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h2>Pager</h2>
-  <p>The .previous and .next classes align each link to the sides of the page:</p>
-  <ul class="pager">
-    <li class="previous"><a href="#">Previous</a></li>
-    <li class="next"><a href="#">Next</a></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h2>Basic List Group</h2>
-  <h1 id="listgroups">List Groups</h1>
-  <ul class="list-group">
-    <li class="list-group-item">First item</li>
-    <li class="list-group-item">Second item</li>
-    <li class="list-group-item">Third item</li>
-  </ul>
-</div>
-
-<div class="container">
-  <h2>List Group With Badges</h2>
-  <ul class="list-group">
-    <li class="list-group-item">New <span class="badge">12</span></li>
-    <li class="list-group-item">Deleted <span class="badge">5</span></li>
-    <li class="list-group-item">Warnings <span class="badge">3</span></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h2>List Group With Linked Items</h2>
-  <div class="list-group">
-    <a href="#" class="list-group-item">First item</a>
-    <a href="#" class="list-group-item">Second item</a>
-    <a href="#" class="list-group-item">Third item</a>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Basic Panel</h2>
-  <div class="panel panel-default">
-    <div class="panel-body">A Basic Panel</div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Panel Heading</h2>
-  <h1 id="panels">Panels</h1>
-  <div class="panel panel-default">
-    <div class="panel-heading">Panel Heading</div>
-    <div class="panel-body">Panel Content</div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Panel Footer</h2>
-  <div class="panel panel-default">
-    <div class="panel-heading">Panel Heading</div>
-    <div class="panel-body">Panel Content</div>
-    <div class="panel-footer">Panel Footer</div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Dropdowns</h2>
-  <h1 id="dropdowns">Dropdowns</h1>
-  <p>The .dropdown class is used to indicate a dropdown menu.</p>
-  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
-  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-    </ul>
-  </div>
-</div>
-
-
-<div class="container">
-  <h2>Dropdowns</h2>
-  <p>The .divider class is used to separate links inside the dropdown menu:</p>
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-      <li class="divider"></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-  </div>
-</div>
-
-
-<div class="container">
-  <h2>Simple Collapsible</h2>
-  <h1 id="collapse">Collapse</h1>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-  <div id="demo" class="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
-</div>
-
-<div class="container">
-  <h2>Simple Collapsible</h2>
-  <a href="#demo" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
-  <div id="demo" class="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
-</div>
-
-<div class="container">
-  <h2>Simple Collapsible</h2>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-  <div id="demo" class="collapse in">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
-</div>
-
-
-<div class="container">
-  <h3>Tabs</h3>
-  <h1 id="tabs">Tabs/Pills</h1>
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Menu 1</a></li>
-    <li><a href="#">Menu 2</a></li>
-    <li><a href="#">Menu 3</a></li>
-  </ul>
-  <br>
-  <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
-</div>
-
-<div class="container">
-  <h3>Tabs With Dropdown Menu</h3>
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Home</a></li>
-    <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Submenu 1-1</a></li>
-        <li><a href="#">Submenu 1-2</a></li>
-        <li><a href="#">Submenu 1-3</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Menu 2</a></li>
-    <li><a href="#">Menu 3</a></li>
-  </ul>
-</div>
-
-<div class="container">
-  <h3>Pills</h3>
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Menu 1</a></li>
-    <li><a href="#">Menu 2</a></li>
-    <li><a href="#">Menu 3</a></li>
-  </ul>
-</div>      
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-  <h1 id="navbar">Navbar</h1>
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>Basic Navbar Example</h3>
-  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
-</div>
-  
-<div class="container">
-  <h2>Vertical (basic) form</h2>
-  <h1 id="forms">Forms</h1>
-  <form>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Inline form</h2>
-  <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside.</p>
-  <form class="form-inline">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
-
-
-<div class="container">
-  <h2>Form control: input</h2>
-  <h1 id="inputs">Inputs</h1>
-  <p>The form below contains two input elements; one of type text and one of type password:</p>
-  <form>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Form control: textarea</h2>
-  <p>The form below contains a textarea for comments:</p>
-  <form>
-    <div class="form-group">
-      <label for="comment">Comment:</label>
-      <textarea class="form-control" rows="5" id="comment"></textarea>
-    </div>
-  </form>
-</div>
-
-
-
-<div class="container">
-  <h2>Horizontal form with static control</h2>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-10">
-        <p class="form-control-static">someone@example.com</p>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Horizontal form: control states</h2>
-  <h1 id="input2">Input 2</h1>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label class="col-sm-2 control-label">Focused</label>
-      <div class="col-sm-10">
-        <input class="form-control" id="focusedInput" type="text" value="Click to focus...">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
-      <div class="col-sm-10">
-        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
-      </div>
-    </div>
-    <fieldset disabled>
-      <div class="form-group">
-        <label for="disabledTextInput" class="col-sm-2 control-label">Disabled input and select list (Fieldset disabled)</label>
-        <div class="col-sm-10">
-          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
-      <div class="form-group">
-        <label for="disabledSelect" class="col-sm-2 control-label"></label>
-        <div class="col-sm-10">
-          <select id="disabledSelect" class="form-control">
-            <option>Disabled select</option>
-          </select>
-        </div>
-      </div>
-    </fieldset>
-    <div class="form-group has-success has-feedback">
-      <label class="col-sm-2 control-label" for="inputSuccess">Input with success and glyphicon</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputSuccess">
-        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-      </div>
-    </div>
-    <div class="form-group has-warning has-feedback">
-      <label class="col-sm-2 control-label" for="inputWarning">Input with warning and glyphicon</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputWarning">
-        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-      </div>
-    </div>
-    <div class="form-group has-error has-feedback">
-      <label class="col-sm-2 control-label" for="inputError">Input with error and glyphicon</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputError">
-        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-      </div>
-    </div>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Input Sizing</h2>
-  <h1 id="inputsizing">Input Sizing</h1>
-  <p>The form below shows input elements with different heights using .input-lg and .input-sm:</p>
-  <form>
-    <div class="form-group">
-      <label for="inputdefault">Default input</label>
-      <input class="form-control" id="inputdefault" type="text">
-    </div>
-    <div class="form-group">
-      <label for="inputlg">input-lg</label>
-      <input class="form-control input-lg" id="inputlg" type="text">
-    </div>
-    <div class="form-group">
-      <label for="inputsm">input-sm</label>
-      <input class="form-control input-sm" id="inputsm" type="text">
-    </div>
-    <div class="form-group">
-      <label for="sel1">Default select list</label>
-      <select class="form-control" id="sel1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="sel2">input-lg</label>
-      <select class="form-control input-lg" id="sel2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="sel3">input-sm</label>
-      <select class="form-control input-sm" id="sel3">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-      </select>
-    </div>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Input Sizing</h2>
-  <p>You can quickly size labels and form controls within a Horizontal form by adding .form-group-lg or .form-group-sm to the div class="form-group" element:</p>
-  <form class="form-horizontal">
-    <div class="form-group form-group-lg">
-      <label class="col-sm-2 control-label" for="lg">form-group-lg</label>
-      <div class="col-sm-10">
-        <input class="form-control" type="text" id="lg">
-      </div>
-    </div>
-    <div class="form-group form-group-sm">
-      <label class="col-sm-2 control-label" for="sm">form-group-sm</label>
-      <div class="col-sm-10">
-        <input class="form-control" type="text" id="sm">
-      </div>
-    </div>
-  </form>
-</div>
-
-<div class="container">
-  <h2>Media Object</h2>
-  <h1 id="mediaobjects">Media Objects</h1>
-  <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
-  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
-  
-  <!-- Left-aligned media object -->
-  <div class="media">
-    <div class="media-left">
-      <img src="img_avatar1.png" class="media-object" style="width:60px">
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading">Left-aligned</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-  <hr>
-  
-  <!-- Right-aligned media object -->
-  <div class="media">
-    <div class="media-body">
-      <h4 class="media-heading">Right-aligned</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="media-right">
-      <img src="img_avatar1.png" class="media-object" style="width:60px">
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Media Object</h2>
-  <p>The media object can also be top, middle or bottom-aligned with the "media-top", "media-middle" or "media-bottom" class:</p><br>
-  <div class="media">
-    <div class="media-left media-top">
-      <img src="img_avatar1.png" class="media-object" style="width:80px">
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media Top</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-  <hr>
-  <div class="media">
-    <div class="media-left media-middle">
-      <img src="img_avatar1.png" class="media-object" style="width:80px">
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media Middle</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-  <hr>
-  <div class="media">
-    <div class="media-left media-bottom">
-      <img src="img_avatar1.png" class="media-object" style="width:80px">
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media Bottom</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-<h1 id="carousel">Carousel</h1>
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="img_chania.jpg" alt="Chania" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="img_chania2.jpg" alt="Chania" width="460" height="345">
-      </div>
-    
-      <div class="item">
-        <img src="img_flower.jpg" alt="Flower" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="img_flower2.jpg" alt="Flower" width="460" height="345">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<div class="container">
-  <h2>Modal Example</h2>
-  <h1 id="modal">Modal</h1>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-</div>
-
-<div class="container">
-  <h2>Small Modal</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>This is a small modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h3>Tooltip Example</h3>
-  <h1 id="tooltip">Tooltip</h1>
-  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-
-<div class="container">
-  <h3>Tooltip Example</h3>
-  <p>The data-placement attribute specifies the tooltip position.</p>
-  <ul class="list-inline">
-    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
-    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
-    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
-    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
-  </ul>
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
-
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-</script>
-
-<div class="container">
-  <h3>Popover Example</h3>
-  <ul class="list-inline">
-  <h1 id="popover">Popover</h1>
-    <li><a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top</a></li>
-    <li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a></li>
-    <li><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a></li>
-    <li><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a></li>
-  </ul>
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-</script>
-
-<div class="container">
-  <h3>Popover Example</h3>
-    <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
-</div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-</script>
-
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-
-<div class="container">
-  <div class="row">
-  <h1 id="scroll">Scrollspy</h1>
-    <nav class="col-sm-3" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#section41">Section 4-1</a></li>
-            <li><a href="#section42">Section 4-2</a></li>
-          </ul>
-        </li>
-      </ul>
+        <!-- /.container-fluid -->
     </nav>
-    <div class="col-sm-9">
-      <div id="section1">
-        <h1>Section 1</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
-      <div id="section2">
-        <h1>Section 2</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
-      <div id="section3">
-        <h1>Section 3</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
-      <div id="section41">
-        <h1>Section 4-1</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
-      <div id="section42">
-        <h1>Section 4-2</h1>
-        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-      </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Start Bootstrap</span>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-  </div>
-</div>
 
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
-  <h1>Bootstrap Affix Example</h1>
-  <h1 id="affix">Affix</h1>
-  <h3>Fixed (sticky) navbar on scroll</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
-</div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Basic Topnav</a></li>
-    <li><a href="#">Page 1</a></li>
-    <li><a href="#">Page 2</a></li>
-    <li><a href="#">Page 3</a></li>
-  </ul>
-</nav>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-<div class="container-fluid" style="height:1000px">
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-</div>
-  </div>
-</div>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
-</html>
 
+</html>
